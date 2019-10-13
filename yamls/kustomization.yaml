@@ -1,0 +1,10 @@
+secretGenerator:
+- name: mysql-pass
+  literals:
+  - password=SUPER_SECRET_PASSWORD    
+resources:
+  - storageclass.yaml
+  - pv.yaml
+  - claim.yaml
+  - mysql-deployment.yaml
+  - wordpress-deployment.yaml
